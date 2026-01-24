@@ -3,7 +3,8 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import Link from "next/link";
-import { ChevronDownIcon } from "@heroicons/react/20/solid"; // You may need to npm install @heroicons/react
+import { ChevronDownIcon } from "@heroicons/react/16/solid";
+import BlogSearch from './BlogSearch';
 
 // 1. Your Data Structure - Update this as you write more
 const blogArchive = [
@@ -29,7 +30,7 @@ export default function SmartMenu() {
 
       <div className="flex gap-6 items-center">
         <Link href="/" className="text-sm font-medium hover:text-blue-600 transition">Home</Link>
-        
+
         {/* --- SMART BLOG DROPDOWN --- */}
         <Menu as="div" className="relative inline-block text-left">
           <Menu.Button className="inline-flex items-center gap-1 text-sm font-medium hover:text-blue-600 transition">
@@ -51,16 +52,16 @@ export default function SmartMenu() {
                 {blogArchive.map((yearObj) => (
                   <div key={yearObj.year} className="px-3 py-2">
                     <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">{yearObj.year}</span>
-                    
+
                     {yearObj.months.map((month) => (
                       <div key={month.name} className="mt-2 ml-2">
-                        <Link 
+                        <Link
                           href={`/blog/${yearObj.year}/${month.name.toLowerCase()}`}
                           className="text-sm font-semibold text-gray-700 hover:text-blue-600 block"
                         >
                           {month.name}
                         </Link>
-                        
+
                         <div className="flex flex-wrap gap-2 mt-1 ml-2">
                           {month.weeks.map((week) => (
                             <Link
@@ -83,11 +84,15 @@ export default function SmartMenu() {
 
         <Link href="/gallery" className="text-sm font-medium hover:text-blue-600 transition">Gallery</Link>
       </div>
-
+      <div className="hidden lg:block flex-1 max-w-sm mx-8">
+        <BlogSearch />
+      </div>
       <div className="ml-auto">
-        <button className="bg-black text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-gray-800 transition">
-          Book a Meeting
-        </button>
+        <Link href="/meet">
+          <button className="bg-black text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-gray-800 transition">
+            Book a Meeting
+          </button>
+        </Link>
       </div>
     </nav>
   );
