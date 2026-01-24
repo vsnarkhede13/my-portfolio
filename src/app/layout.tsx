@@ -3,7 +3,7 @@ import Script from 'next/script';
 import './globals.css'; // Ensure your Tailwind styles are imported
 import SmartMenu from '@/components/navigation/SmartMenu';
 import Footer from '@/components/sections/Footer';
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 
 // 1. Your existing Metadata
 export const metadata: Metadata = {
