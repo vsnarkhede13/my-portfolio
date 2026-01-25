@@ -3,8 +3,11 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
+import { getTotalBlogCount } from '@/data/blogData';
+
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const blogCount = getTotalBlogCount();
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -88,7 +91,7 @@ export default function Hero() {
             <div className="text-sm text-slate-500 mt-1">Projects Completed</div>
           </div>
           <div className="fade-in-up" style={{ animationDelay: '0.1s' }}>
-            <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">100+</div>
+            <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">{blogCount}</div>
             <div className="text-sm text-slate-500 mt-1">Blog Articles</div>
           </div>
           <div className="fade-in-up" style={{ animationDelay: '0.2s' }}>
