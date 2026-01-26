@@ -98,7 +98,7 @@ export default function HeroClient({ blogCount }: HeroClientProps) {
             <div className="text-sm text-slate-500 mt-1">Blog Articles</div>
           </div>
           <div className="fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <div className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-orange-600 bg-clip-text text-transparent">5+</div>
+            <div className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-orange-600 bg-clip-text text-transparent">4+</div>
             <div className="text-sm text-slate-500 mt-1">Years Experience</div>
           </div>
         </div>
