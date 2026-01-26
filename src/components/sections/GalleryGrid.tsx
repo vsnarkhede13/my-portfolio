@@ -6,10 +6,10 @@ import { XMarkIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
 const photos = [
-  { id: 1, url: "/photo1.jpg", title: "Mountain Peak", category: "Nature", size: "tall", color: "from-blue-500/20 to-cyan-500/20" },
-  { id: 2, url: "/photo2.jpg", title: "Street Life", category: "Urban", size: "wide", color: "from-purple-500/20 to-pink-500/20" },
-  { id: 3, url: "/photo3.jpg", title: "Workspace", category: "Interior", size: "standard", color: "from-orange-500/20 to-red-500/20" },
-  { id: 4, url: "/photo4.jpg", title: "Architecture", category: "Design", size: "standard", color: "from-green-500/20 to-emerald-500/20" },
+  { id: 1, url: "/photo1.jpg", title: "Glens", category: "Dessert", size: "tall", color: "from-blue-500/20 to-cyan-500/20" },
+  { id: 2, url: "/photo2.jpg", title: "Third wave coffee", category: "Cafe", size: "wide", color: "from-purple-500/20 to-pink-500/20" },
+  { id: 3, url: "/photo3.jpg", title: "Workspace", category: "Macro Photography", size: "standard", color: "from-orange-500/20 to-red-500/20" },
+  { id: 4, url: "/photo4.jpg", title: "Bhel", category: "Local Cuisine", size: "standard", color: "from-green-500/20 to-emerald-500/20" },
 ];
 
 export default function GalleryGrid() {

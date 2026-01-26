@@ -23,7 +23,7 @@ export default function Footer() {
             {/* Social Links */}
             <div className="flex gap-4">
               <a 
-                href="https://twitter.com/yourhandle" 
+                href="https://x.com/VishalN_13" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group p-2 bg-slate-100 hover:bg-blue-500 rounded-full transition-all duration-300"
@@ -33,7 +33,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a 
-                href="https://linkedin.com/in/yourhandle" 
+                href="https://www.linkedin.com/in/vishal-narkhede/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group p-2 bg-slate-100 hover:bg-blue-600 rounded-full transition-all duration-300"
@@ -43,7 +43,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a 
-                href="https://github.com/yourhandle" 
+                href="https://github.com/vsnarkhede13/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group p-2 bg-slate-100 hover:bg-slate-900 rounded-full transition-all duration-300"
