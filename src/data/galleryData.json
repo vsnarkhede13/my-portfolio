@@ -1,0 +1,40 @@
+{
+  "photos": [
+    {
+      "id": 1,
+      "url": "/gallery/photo1.jpg",
+      "title": "Mountain Peak",
+      "category": "Nature",
+      "size": "tall",
+      "description": "A beautiful mountain landscape",
+      "date": "2026-01-20"
+    },
+    {
+      "id": 2,
+      "url": "/gallery/photo2.jpg",
+      "title": "Street Life",
+      "category": "Urban",
+      "size": "wide",
+      "description": "Urban street photography",
+      "date": "2026-01-21"
+    },
+    {
+      "id": 3,
+      "url": "/gallery/photo3.jpg",
+      "title": "Workspace",
+      "category": "Interior",
+      "size": "standard",
+      "description": "Modern workspace design",
+      "date": "2026-01-22"
+    },
+    {
+      "id": 4,
+      "url": "/gallery/photo4.jpg",
+      "title": "Architecture",
+      "category": "Design",
+      "size": "standard",
+      "description": "Contemporary architecture",
+      "date": "2026-01-23"
+    }
+  ]
+}
